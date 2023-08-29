@@ -1,0 +1,194 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                fontFamily: {
+                    Montserrat: ['Montserrat', 'sans-serif']
+                },
+            }
+        }
+    </script>
+</head>
+<body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+<div class="max-w-screen-2xl mx-auto home_page">
+    <div class="relative sticky top-0 header">
+        <div class="absolute w-full">
+            <img class="" src="./public/images/header/vector.png" alt="">
+        </div>
+        <div class="h-[45px] bg-[#E6E6E6] flex justify-end w-full items-center sub_header_1">
+            <div class="flex justify-end items-center mr-[50px] h-full w-full">
+                <div class="flex justify-between items-center gap-8 mr-8 font-Montserrat">
+                    <div class="text-[#898989] inline-flex items-baseline gap-2">
+                        <img src="./public/images/header/icon_phone.png" alt="Hotline">
+                        Hotline: 19009080
+                    </div>
+                    <div class="text-[#898989] inline-flex items-baseline gap-2">
+                        <img src="./public/images/header/icon_letter.png" alt="Email">
+                        Email: cskh@vdtc.com.vn
+                    </div>
+                    <div>
+                        <form>
+                            <label for="default-search"
+                                   class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+                            <div class="relative">
+                                <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                                    <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                                         xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                              stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+                                    </svg>
+                                </div>
+                                <input type="search" id="default-search"
+                                       class="block p-2 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 "
+                                       placeholder="Tìm kiếm" required>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="h-[45px] bg-[#FFFFFF] flex justify-end w-full items-center sub_header_2">
+            <div class="w-full flex justify-end items-center gap-8">
+                <div class="flex justify-end items-center gap-6 font-Montserrat">
+                    <div><img src="./public/images/header/icon_home.png" alt=""></div>
+                    <div>ePass chúng tôi</div>
+                    <div>Sản phẩm nổi bật</div>
+                    <div>Hướng dẫn</div>
+                    <div>Điểm cung cấp dịch vụ</div>
+                    <div>Đăng ký sử dụng ePass</div>
+                </div>
+                <div class="mr-[70px]">
+                    <button class="font-Montserrat bg-[#EE0033] login_button text-white px-3.5 py-1.5 rounded-t-lg rounded-br-lg">
+                        Đăng nhập
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="body">
+        <div>
+            <img class='object-cover w-full md:h-[500px] xl:h-[702px]'
+                 src="./public/images/body/banner.png"
+                 alt=""/>
+        </div>
+        <div class="w-[85%] flex mx-auto pioneer items-center my-6">
+            <div class="my-12">
+                <div class="mb-[60px] text-center font-Montserrat text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-[#EE0033] to-[#FF7543] italic">
+                    Tiên phong kiến tạo Giao thông số
+                </div>
+                <div class="flex justify-center gap-0">
+                    <div class="basis-1/2">
+                        <img class="w-full" src="./public/images/body/pioneer.png" alt="">
+                    </div>
+                    <div class="basis-1/2 flex flex-col gap-6">
+                        <div class="font-Montserrat font-bold text-3xl text-[#EE0033]">Sứ mệnh kiến tạo nền tảng Giao
+                            thông số Việt Nam
+                        </div>
+                        <div class="font-Montserrat text-[##252525]">Sự kiện ký kết thỏa thuận hợp tác chiến lược giữa
+                            VDTC và Công ty Cổ phần Aggregatori Capaci hướng đến khát vọng kiến tạo nền tảng giao thông
+                            số Việt Nam.
+                        </div>
+                        <div class="grid grid-cols-3 gap-4">
+                            <div class="font-Montserrat flex justify-between items-center gap-1 bg-[#AEA798] text-white font-semibold p-4 rounded-xl ">
+                                <div>Đa dạng các phương thức thanh toán</div>
+                                <img src="./public/images/body/payment.png" alt="">
+                            </div>
+                            <div class="font-Montserrat flex justify-between items-center gap-1 bg-[#AEA798] text-white font-semibold p-4 rounded-xl ">
+                                <div>Hệ thống điểm đăng ký toàn quốc</div>
+                                <img src="./public/images/body/frame.png" alt="">
+                            </div>
+                            <div class="font-Montserrat flex justify-between items-center gap-1 bg-[#AEA798] text-white font-semibold p-4 rounded-xl ">
+                                <div>Hệ sinh thái đa dịch vụ</div>
+                                <img src="./public/images/body/sevice.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w-full bg-[#F3F3F3]">
+            <div class="font-Montserrat w-[85%] mx-auto items-center">
+                <div class="text-center py-[40px] font-bold text-3xl">Sản phẩm nổi bật</div>
+                <div class="flex justify-between items-center">
+                    <div class="flex justify-between items-center gap-12">
+                        <div class="bg-[#EE0033] font-medium rounded-3xl text-white py-2 px-6">Tất cả</div>
+                        <div class="text-[#7E8B95] font-medium">Thu phí không dừng</div>
+                        <div class="text-[#7E8B95] font-medium">Bảo hiểm</div>
+                        <div class="text-[#7E8B95] font-medium">Dịch vụ ôtô</div>
+                        <div class="text-[#7E8B95] font-medium">Viễn thông</div>
+                    </div>
+                    <div class="border border-red-600 text-red-600 rounded-3xl font-medium text-lg italic py-2 px-6">Xem
+                        tất cả
+                    </div>
+                </div>
+                <div class="grid w-full lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 mt-4">
+                    <div class="relative">
+                        <img class="w-full" src="./public/images/body/outstanding_1.png" alt="">
+                        <div class="absolute bottom-10 left-10 flex justify-center lg:gap-8 gap-4">
+                            <div>
+                                <div class="mb-3">Thẻ ePass thu phí không dừng</div>
+                                <div>Xem chi tiết</div>
+                            </div>
+                            <div>
+                                <div>120.000</div>
+                                <button>Đăng ký</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <img class="w-full" src="./public/images/body/outstanding_2.png" alt="">
+                    </div>
+                    <div>
+                        <img class="w-full" src="./public/images/body/outstanding_3.png" alt="">
+                    </div>
+                </div>
+                <div class="flex py-10 justify-center">
+                    <img src="./public/images/body/slide.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="w-full">
+            <div class="font-Montserrat w-[85%] mx-auto items-center">
+                <div class="text-center py-[40px] font-bold text-3xl">Ưu đãi</div>
+                <div class="w-full grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 mt-4 gap-6">
+                    <div>
+                        <img class="w-full" src="./public/images/body/endow_pic1.png" alt="">
+                    </div>
+                    <div>
+                        <img class="w-full" src="./public/images/body/endow_pic2.png" alt="">
+                    </div>
+                    <div>
+                        <img class="w-full" src="./public/images/body/endow_pic3.png" alt="">
+                    </div>
+                </div>
+                <div class="flex py-10 justify-center">
+                    <img src="./public/images/body/slide.png" alt="">
+                </div>
+                <div class="flex pb-10 justify-center">
+                    <button class="bg-red-600 py-2 px-5 text-sm text-white rounded rounded-xl">Xem tất cả</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="statistic"></div>
+    <div class="feedback"></div>
+    <div class="partner"></div>
+    <div class="support"></div>
+    <div class="setup"></div>
+</div>
+<div class="footer"></div>
+</div>
+</body>
+</html>

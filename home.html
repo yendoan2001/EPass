@@ -22,9 +22,12 @@
 <body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
 <div class="max-w-screen-2xl mx-auto home_page">
-    <div class="relative sticky top-0 header">
+    <div class="relative sticky z-10 top-0 header">
         <div class="absolute w-full">
             <img class="" src="./public/images/header/vector.png" alt="">
+        </div>
+        <div class="absolute top-[-76px] left-[-9px]">
+            <img class="" src="./public/images/header/epass_card.png" alt="" width="230">
         </div>
         <div class="h-[45px] bg-[#E6E6E6] flex justify-end w-full items-center sub_header_1">
             <div class="flex justify-end items-center mr-[50px] h-full w-full">
@@ -68,7 +71,7 @@
                     <div>Điểm cung cấp dịch vụ</div>
                     <div>Đăng ký sử dụng ePass</div>
                 </div>
-                <div class="mr-[70px]">
+                <div class="mr-[80px]">
                     <button class="font-Montserrat bg-[#EE0033] login_button text-white px-3.5 py-1.5 rounded-t-lg rounded-br-lg">
                         Đăng nhập
                     </button>
@@ -82,25 +85,26 @@
                  src="./public/images/body/banner.png"
                  alt=""/>
         </div>
-        <div class="w-[85%] flex mx-auto pioneer items-center my-6">
+        <div class="w-[85%] flex mx-auto items-center my-6 pioneer">
             <div class="my-12">
-                <div class="mb-[60px] text-center font-Montserrat text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-[#EE0033] to-[#FF7543] italic">
+                <div class="mb-[60px] p-1 text-center font-Montserrat text-3xl sm:text-5xl lg:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-[#EE0033] to-[#FF7543] italic">
                     Tiên phong kiến tạo Giao thông số
                 </div>
-                <div class="flex justify-center gap-0">
-                    <div class="basis-1/2">
+                <div class="grid xl:grid-cols-2 gap-10 grid-cols-1">
+                    <div class="">
                         <img class="w-full" src="./public/images/body/pioneer.png" alt="">
                     </div>
-                    <div class="basis-1/2 flex flex-col gap-6">
-                        <div class="font-Montserrat font-bold text-3xl text-[#EE0033]">Sứ mệnh kiến tạo nền tảng Giao
+                    <div class=" flex flex-col gap-6">
+                        <div class="font-Montserrat font-bold text-xl sm:text-2xl lg:text-3xl text-[#EE0033]">Sứ mệnh
+                            kiến tạo nền tảng Giao
                             thông số Việt Nam
                         </div>
                         <div class="font-Montserrat text-[##252525]">Sự kiện ký kết thỏa thuận hợp tác chiến lược giữa
                             VDTC và Công ty Cổ phần Aggregatori Capaci hướng đến khát vọng kiến tạo nền tảng giao thông
                             số Việt Nam.
                         </div>
-                        <div class="grid grid-cols-3 gap-4">
-                            <div class="font-Montserrat flex justify-between items-center gap-1 bg-[#AEA798] text-white font-semibold p-4 rounded-xl ">
+                        <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+                            <div class=" font-Montserrat flex justify-between items-center gap-1 bg-[#AEA798] text-white font-semibold p-4 rounded-xl ">
                                 <div>Đa dạng các phương thức thanh toán</div>
                                 <img src="./public/images/body/payment.png" alt="">
                             </div>
@@ -117,23 +121,21 @@
                 </div>
             </div>
         </div>
-        <div class="w-full bg-[#F3F3F3]">
+        <div class="w-full bg-[#F3F3F3] outstanding">
             <div class="font-Montserrat w-[85%] mx-auto items-center">
                 <div class="text-center py-[40px] font-bold text-3xl">Sản phẩm nổi bật</div>
-                <div class="flex justify-between items-center">
-                    <div class="flex justify-between items-center gap-12">
-                        <div class="bg-[#EE0033] font-medium rounded-3xl text-white py-2 px-6">Tất cả</div>
-                        <div class="text-[#7E8B95] font-medium">Thu phí không dừng</div>
-                        <div class="text-[#7E8B95] font-medium">Bảo hiểm</div>
-                        <div class="text-[#7E8B95] font-medium">Dịch vụ ôtô</div>
-                        <div class="text-[#7E8B95] font-medium">Viễn thông</div>
-                    </div>
-                    <div class="border border-red-600 text-red-600 rounded-3xl font-medium text-lg italic py-2 px-6">Xem
-                        tất cả
-                    </div>
-                </div>
+                <!--                <div class="flex justify-between items-center w-full">-->
+                <!--                    <div class="flex justify-between items-center gap-12">-->
+                <!--                        <div class="bg-[#EE0033] font-medium rounded-3xl text-white py-2 px-6">Tất cả</div>-->
+                <!--                        <div class="text-[#7E8B95] font-medium">Thu phí không dừng</div>-->
+                <!--                        <div class="text-[#7E8B95] font-medium">Bảo hiểm</div>-->
+                <!--                        <div class="text-[#7E8B95] font-medium">Dịch vụ ôtô</div>-->
+                <!--                        <div class="text-[#7E8B95] font-medium">Viễn thông</div>-->
+                <!--                    </div>-->
+                <!--                    <div class="border border-red-600 text-red-600 rounded-3xl font-medium text-lg italic py-2 px-6">Xem tất cả</div>-->
+                <!--                </div>-->
                 <div class="grid w-full lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 mt-4">
-                    <div class="relative">
+                    <div class="relative z-0">
                         <img class="w-full" src="./public/images/body/outstanding_1.png" alt="">
                         <div class="absolute bottom-10 left-10 flex justify-center lg:gap-8 gap-4">
                             <div>
@@ -158,7 +160,7 @@
                 </div>
             </div>
         </div>
-        <div class="w-full">
+        <div class="w-full endow">
             <div class="font-Montserrat w-[85%] mx-auto items-center">
                 <div class="text-center py-[40px] font-bold text-3xl">Ưu đãi</div>
                 <div class="w-full grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 mt-4 gap-6">
@@ -180,10 +182,63 @@
                 </div>
             </div>
         </div>
+        <div class="w-full bg-[#F3F3F3] py-10 statistic">
+            <div class="flex justify-center font-Montserrat p-12 w-[75%] bg-white mx-auto rounded rounded-xl drop-shadow-xl">
+                <div>
+                    <img src="./public/images/body/map_vn.png" alt="">
+                </div>
+                <div class="flex flex-col gap-2 mt-16">
+                    <div class="text-8xl text-[#EE0033] font-bold">2.089.000</div>
+                    <div class="text-4xl text-[#8F8F8F] leading-relaxed font-bold">Khách hàng đang sử dụng
+                        dịch vụ ePass</div>
+                </div>
+            </div>
+        </div>
+        <div class="w-full feedback">
+            <div class="font-Montserrat w-[85%] mx-auto items-center">
+                <div class="text-center py-[40px] font-bold text-3xl">Khách hàng nói về ePass</div>
+                <div class="w-full grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 mt-4 gap-6">
+                    <div class="bg-white mx-auto rounded rounded-xl drop-shadow-xl p-6">
+                        <div class="flex items-center gap-4">
+                            <img src="./public/images/body/feedback_pic1.png">
+                            <div class="flex flex-col">
+                                <div class="text-red-600 font-bold text-xl">Chị Thu Hường</div>
+                                <span class="italic text-[#252525]">Trưởng phòng Viettel Post</span>
+                            </div>
+                        </div>
+                        <div class="mt-5">
+                            Là đơn vị vận tải hàng đầu Việt Nam, Viettel Post đã vận chuyển hàng triệu đơn hàng khắp các nẻo đường đến tận tay người Việt. Cảm ơn ePass đã đồng hành cùng chúng tôi xuyên suốt chặng đường vừa qua.
+                        </div>
+                    </div>
+                    <div class="bg-white mx-auto rounded rounded-xl drop-shadow-xl p-6">
+                        <div class="flex items-center gap-4">
+                            <img src="./public/images/body/feedback_pic2.png">
+                            <div class="flex flex-col">
+                                <div class="text-red-600 font-bold text-xl">Anh Như Văn</div>
+                                <span class="italic text-[#252525]">Nhân viên taxi Xanh GSM</span>
+                            </div>
+                        </div>
+                        <div class="mt-5">
+                            Mình là tài xế taxi thường xuyên có khách hàng ngoại tỉnh nên đi qua các trạm thu phí mỗi ngày. Mình cảm thấy dịch vụ của ePass rất tốt, qua trạm nhanh, nạp tiền dễ dàng và đặc biệt mình được tư vấn nhiệt tình khi có các thắc mắc.                        </div>
+                    </div>
+                    <div class="bg-white mx-auto rounded rounded-xl drop-shadow-xl p-6">
+                        <div class="flex items-center gap-4">
+                            <img src="./public/images/body/feedback_pic2.png">
+                            <div class="flex flex-col">
+                                <div class="text-red-600 font-bold text-xl">Anh Như Văn</div>
+                                <span class="italic text-[#252525]">Nhân viên taxi Xanh GSM</span>
+                            </div>
+                        </div>
+                        <div class="mt-5">
+                            Mình là tài xế taxi thường xuyên có khách hàng ngoại tỉnh nên đi qua các trạm thu phí mỗi ngày. Mình cảm thấy dịch vụ của ePass rất tốt, qua trạm nhanh, nạp tiền dễ dàng và đặc biệt mình được tư vấn nhiệt tình khi có các thắc mắc.                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
 
     </div>
-    <div class="statistic"></div>
-    <div class="feedback"></div>
     <div class="partner"></div>
     <div class="support"></div>
     <div class="setup"></div>

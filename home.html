@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
           rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
     <link rel='icon' type='image/png'
           href='https://play-lh.googleusercontent.com/L4_dvDgoUbpKvwdZduoOQm5FsUImU6FdUHJ-wc8HtggIZpCrOyq6hdx64bvSbWDAac8o'>
     <title>ePass</title>
@@ -24,8 +25,9 @@
 </head>
 <body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
-<div class="mx-auto home_page">
+<script src="js/slider.js"></script>
 
+<div class="mx-auto home_page">
     <!--header-->
     <div class="relative sticky z-10 top-0 header">
         <div class="absolute lg:block hidden w-full">
@@ -76,21 +78,21 @@
         <div class="lg:h-[45px] sm:h-[35px] h-[25px] bg-white xl:bg-[#E6E6E6] flex justify-end w-full items-center sub_header_1">
             <div class="flex justify-end items-center mr-[50px] h-full w-full">
                 <div class="xl:flex hidden justify-between text-sm items-center gap-8 mr-8 font-Montserrat">
-                    <div class="text-[#898989] inline-flex items-baseline gap-2">
+                    <div class="text-[#898989] font-medium inline-flex items-baseline gap-2">
                         <img src="./public/images/header/icon_phone.png" alt="Hotline">
                         Hotline: 19009080
                     </div>
-                    <div class="text-[#898989] inline-flex items-baseline gap-2">
+                    <div class="text-[#898989] font-medium inline-flex items-baseline gap-2">
                         <img src="./public/images/header/icon_letter.png" alt="Email">
                         Email: cskh@vdtc.com.vn
                     </div>
                     <div>
                         <form>
                             <label for="default-search"
-                                   class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+                                   class="mb-2 text-sm font-medium text-gray-900 sr-only">Search</label>
                             <div class="relative">
                                 <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-                                    <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                                    <svg class="w-4 h-4 text-gray-500" aria-hidden="true"
                                          xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
                                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                               stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
@@ -110,7 +112,7 @@
                 <div class="z-10 flex justify-end items-center font-medium 2xl:gap-16 xl:gap-6 md:gap-6 gap-4 font-Montserrat">
                     <div>
                         <a href="">
-                            <img src="./public/images/header/icon_home.png" alt="">
+                            <img class="w-8" src="./public/images/header/icon_home.png" alt="">
                         </a>
                     </div>
                     <div class="text-xs xl:text-sm">
@@ -157,7 +159,6 @@
 
     <!--body-->
     <div class="body">
-
         <!--banner-->
         <div id="default-carousel" class="relative w-full z-0" data-carousel="slide">
             <!-- Carousel wrapper -->
@@ -234,8 +235,8 @@
         </div>
         <!--banner-->
 
-        <!--pioneer-->
-        <div class="w-[85%] flex mx-auto items-center my-6 pioneer">
+        <!--introduce-->
+        <div class="w-[85%] flex mx-auto items-center my-6 introduce">
             <div class="my-12">
                 <div class="grid xl:grid-cols-2 gap-10 grid-cols-1">
                     <div class="">
@@ -252,46 +253,46 @@
                             hoạt, đặt yếu tố bảo mật khách hàng lên hàng đầu.
                         </div>
                         <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
-                            <div class=" font-Montserrat flex justify-between items-center gap-1 bg-[#AEA798] text-white font-semibold p-4 rounded-xl ">
-                                <div>Đa dạng các phương thức thanh toán</div>
-                                <img src="./public/images/body/payment.png" alt="">
+                            <div class="font-Montserrat font-semibold p-4 rounded-xl ">
+                                <img class="mb-3 mx-auto w-full" src="./public/images/body/introduce_pic1.png" alt="">
+                                <div>Thanh toán linh hoạt, đa dạng phương thức</div>
                             </div>
-                            <div class="font-Montserrat flex justify-between items-center gap-1 bg-[#AEA798] text-white font-semibold p-4 rounded-xl ">
-                                <div>Hệ thống điểm đăng ký toàn quốc</div>
-                                <img src="./public/images/body/frame.png" alt="">
+                            <div class="font-Montserrat font-semibold p-4 rounded-xl ">
+                                <img class="mb-3 mx-auto w-full" src="./public/images/body/introduce_pic2.png" alt="">
+                                <div>Hệ thống điểm đăng ký, dịch vụ toàn quốc</div>
                             </div>
-                            <div class="font-Montserrat flex justify-between items-center gap-1 bg-[#AEA798] text-white font-semibold p-4 rounded-xl ">
+                            <div class="font-Montserrat font-semibold p-4 rounded-xl ">
+                                <img class="mb-3 mx-auto w-full" src="./public/images/body/introduce_pic3.png" alt="">
                                 <div>Hệ sinh thái đa dịch vụ</div>
-                                <img src="./public/images/body/sevice.png" alt="">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!--pioneer-->
+        <!--introduce-->
 
         <!--outstanding-->
-        <div class="w-full bg-[#F3F3F3] h-max outstanding">
+        <div class="w-full bg-[#F3F3F3] outstanding">
             <div class="font-Montserrat w-[85%] mx-auto items-center">
                 <div class="text-center py-[40px] font-bold text-3xl">Sản phẩm nổi bật</div>
-                <div class="flex justify-between items-center">
-                    <div class="flex justify-center items-center gap-12">
-                        <div class="bg-[#EE0033] font-medium rounded-3xl text-white py-2 px-6"><a href="">Tất cả</a>
-                        </div>
-                        <div class="text-[#7E8B95] font-medium"><a href="">Thu phí không dừng</a></div>
-                        <div class="text-[#7E8B95] font-medium"><a href="">Bảo hiểm</a></div>
-                        <div class="text-[#7E8B95] font-medium"><a href="">Dịch vụ ôtô</a></div>
-                        <div class="text-[#7E8B95] font-medium"><a href="">Viễn thông</a></div>
+                <div class="flex justify-between xl:items-center text-sm sm:text-lg">
+                    <div class="grid xl:grid-cols-5 sm:grid-cols-3 grid-cols-2 gap-4 items-center">
+                        <div class="bg-[#EE0033] font-medium rounded-3xl text-white py-2 px-4 sm:px-6 mx-auto"><a
+                                href="">Tất cả</a></div>
+                        <div class="text-[#7E8B95] font-medium mx-auto"><a href="">Thu phí</a></div>
+                        <div class="text-[#7E8B95] font-medium mx-auto"><a href="">Bảo hiểm</a></div>
+                        <div class="text-[#7E8B95] font-medium mx-auto"><a href="">Dịch vụ ôtô</a></div>
+                        <div class="text-[#7E8B95] font-medium mx-auto"><a href="">Viễn thông</a></div>
                     </div>
-                    <button class="border border-red-600 text-red-600 rounded-3xl font-medium text-lg italic py-2 px-6">
+                    <button class="border border-red-600 text-red-600 h-1/2 rounded-3xl text-sm sm:text-lg font-medium italic py-2 px-6">
                         Xem tất cả
                     </button>
                 </div>
                 <!--slide-->
                 <div id="default-carouselousel2" class="relative w-full z-0" data-carousel="slide">
                     <!-- Carousel wrapper -->
-                    <div class="relative h-[200px] overflow-hidden rounded-lg sm:h-[300px] md:h-[400px] xl:h-[600px]">
+                    <div class="relative overflow-hidden rounded-lg h-[700px] mt-4">
                         <!-- Item 1 -->
                         <div class="hidden duration-700 ease-in-out" data-carousel-item>
                             <div class="absolute grid grid-cols-3 gap-4 w-full">
@@ -368,7 +369,7 @@
                         </div>
                         <!-- Item 2 -->
                         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <div class="absolute block grid grid-cols-3 gap-4 w-full h-full">
+                            <div class="absolute grid grid-cols-3 gap-4 w-full">
                                 <div class="max-w-sm bg-white border border-gray-200 rounded-3xl shadow dark:bg-gray-800 dark:border-gray-700 mx-auto">
                                     <a href="#">
                                         <img class="rounded-t-lg" src="./public/images/body/outstanding_pic1.png"
@@ -438,12 +439,11 @@
                                         </div>
                                     </div>
                                 </div>
-
                             </div>
                         </div>
                         <!-- Item 3 -->
                         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <div class="absolute block grid grid-cols-3 gap-4 w-full h-full">
+                            <div class="absolute grid grid-cols-3 gap-4 w-full">
                                 <div class="max-w-sm bg-white border border-gray-200 rounded-3xl shadow dark:bg-gray-800 dark:border-gray-700 mx-auto">
                                     <a href="#">
                                         <img class="rounded-t-lg" src="./public/images/body/outstanding_pic1.png"
@@ -513,12 +513,11 @@
                                         </div>
                                     </div>
                                 </div>
-
                             </div>
                         </div>
                         <!-- Item 4 -->
                         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <div class="absolute block grid grid-cols-3 gap-4 w-full h-full">
+                            <div class="absolute grid grid-cols-3 gap-4 w-full">
                                 <div class="max-w-sm bg-white border border-gray-200 rounded-3xl shadow dark:bg-gray-800 dark:border-gray-700 mx-auto">
                                     <a href="#">
                                         <img class="rounded-t-lg" src="./public/images/body/outstanding_pic1.png"
@@ -588,12 +587,11 @@
                                         </div>
                                     </div>
                                 </div>
-
                             </div>
                         </div>
                         <!-- Item 5 -->
                         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <div class="absolute block grid grid-cols-3 gap-4 w-full h-full">
+                            <div class="absolute grid grid-cols-3 gap-4 w-full">
                                 <div class="max-w-sm bg-white border border-gray-200 rounded-3xl shadow dark:bg-gray-800 dark:border-gray-700 mx-auto">
                                     <a href="#">
                                         <img class="rounded-t-lg" src="./public/images/body/outstanding_pic1.png"
@@ -663,7 +661,6 @@
                                         </div>
                                     </div>
                                 </div>
-
                             </div>
                         </div>
                     </div>
@@ -708,7 +705,6 @@
                         </span>
                     </button>
                 </div>
-                <div class="h-[400px]"></div>
 
             </div>
         </div>
@@ -823,6 +819,20 @@
             </div>
         </div>
         <!--endow-->
+
+        <!--endow2-->
+        <div class="w-full bg-[#F3F3F3] endow">
+            <div class="font-Montserrat w-[85%] mx-auto items-center">
+                <div class="text-center py-[40px] font-bold text-3xl">Ưu đãi</div>
+                <section class="flex justify-center items-center" id="slider">
+                    
+                </section>
+                <div class="flex pb-10 justify-center">
+                    <button class="bg-red-600 py-2 px-5 text-sm text-white rounded rounded-xl">Xem tất cả</button>
+                </div>
+            </div>
+        </div>
+        <!--endow2-->
 
         <!--statistic-->
         <div class="w-full bg-[#F3F3F3] py-10 statistic">
@@ -1166,17 +1176,27 @@
 
         <!--partner-->
         <div class="w-full bg-[#F3F3F3] partner">
-            <div class="font-Montserrat mx-auto py-24 w-[85%]">
-                <div class="text-center w-full mb-14 font-bold text-3xl">Đối tác của ePass</div>
+            <div class="font-Montserrat mx-auto py-20 w-[85%]">
+                <div class="flex justify-between w-full mb-8 gap-4">
+                    <div class="font-bold md:text-3xl text-xl ml-8">Đối tác của ePass</div>
+                    <div class="uppercase font-bold md:text-xl text-sm flex justify-end sm:gap-4 gap-2 mr-8">
+                        <div class="text-[#F38551] underline underline-offset-8">Doanh nghiệp</div>
+                        <div>Chính phủ</div>
+                    </div>
+                </div>
                 <div id="default-carousel5" class="relative w-full z-0" data-carousel="slide">
                     <!-- Carousel wrapper -->
                     <div class="relative overflow-hidden rounded-lg sm:h-[150px]">
                         <!-- Item 1 -->
                         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <div class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 grid items-center w-full grid-cols-4 w-full">
+                            <div class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 grid items-center w-full grid-cols-6 w-full">
                                 <img class="w-2/3 mx-auto" src="./public/images/body/partner_MB.png"
                                      alt="...">
+                                <img class="w-2/3 mx-auto" src="./public/images/body/partner_OCB.png"
+                                     alt="...">
                                 <img class="w-2/3 mx-auto" src="./public/images/body/partner_BIDV.png"
+                                     alt="...">
+                                <img class="w-2/3 mx-auto" src="./public/images/body/partner_taxi.png"
                                      alt="...">
                                 <img class="w-2/3 mx-auto" src="./public/images/body/partner_VIB.png"
                                      alt="...">
@@ -1186,10 +1206,14 @@
                         </div>
                         <!-- Item 2 -->
                         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <div class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 grid items-center w-full grid-cols-4 w-full">
+                            <div class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 grid items-center w-full grid-cols-6 w-full">
                                 <img class="w-2/3 mx-auto" src="./public/images/body/partner_MB.png"
                                      alt="...">
+                                <img class="w-2/3 mx-auto" src="./public/images/body/partner_OCB.png"
+                                     alt="...">
                                 <img class="w-2/3 mx-auto" src="./public/images/body/partner_BIDV.png"
+                                     alt="...">
+                                <img class="w-2/3 mx-auto" src="./public/images/body/partner_taxi.png"
                                      alt="...">
                                 <img class="w-2/3 mx-auto" src="./public/images/body/partner_VIB.png"
                                      alt="...">
@@ -1199,10 +1223,14 @@
                         </div>
                         <!-- Item 3 -->
                         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <div class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 grid items-center w-full grid-cols-4 w-full">
+                            <div class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 grid items-center w-full grid-cols-6 w-full">
                                 <img class="w-2/3 mx-auto" src="./public/images/body/partner_MB.png"
                                      alt="...">
+                                <img class="w-2/3 mx-auto" src="./public/images/body/partner_OCB.png"
+                                     alt="...">
                                 <img class="w-2/3 mx-auto" src="./public/images/body/partner_BIDV.png"
+                                     alt="...">
+                                <img class="w-2/3 mx-auto" src="./public/images/body/partner_taxi.png"
                                      alt="...">
                                 <img class="w-2/3 mx-auto" src="./public/images/body/partner_VIB.png"
                                      alt="...">
@@ -1212,10 +1240,14 @@
                         </div>
                         <!-- Item 4 -->
                         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <div class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 grid items-center w-full grid-cols-4 w-full">
+                            <div class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 grid items-center w-full grid-cols-6 w-full">
                                 <img class="w-2/3 mx-auto" src="./public/images/body/partner_MB.png"
                                      alt="...">
+                                <img class="w-2/3 mx-auto" src="./public/images/body/partner_OCB.png"
+                                     alt="...">
                                 <img class="w-2/3 mx-auto" src="./public/images/body/partner_BIDV.png"
+                                     alt="...">
+                                <img class="w-2/3 mx-auto" src="./public/images/body/partner_taxi.png"
                                      alt="...">
                                 <img class="w-2/3 mx-auto" src="./public/images/body/partner_VIB.png"
                                      alt="...">
@@ -1225,10 +1257,14 @@
                         </div>
                         <!-- Item 5 -->
                         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <div class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 grid items-center w-full grid-cols-4 w-full">
+                            <div class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 grid items-center w-full grid-cols-6 w-full">
                                 <img class="w-2/3 mx-auto" src="./public/images/body/partner_MB.png"
                                      alt="...">
+                                <img class="w-2/3 mx-auto" src="./public/images/body/partner_OCB.png"
+                                     alt="...">
                                 <img class="w-2/3 mx-auto" src="./public/images/body/partner_BIDV.png"
+                                     alt="...">
+                                <img class="w-2/3 mx-auto" src="./public/images/body/partner_taxi.png"
                                      alt="...">
                                 <img class="w-2/3 mx-auto" src="./public/images/body/partner_VIB.png"
                                      alt="...">
@@ -1470,7 +1506,18 @@
                         </a>
                     </li>
                 </ul>
+                <div class="mt-10 ml-3">
+                    <div class="text-[#898989] italic font-medium inline-flex items-baseline gap-2">
+                        <img src="./public/images/header/icon_phone.png" alt="Hotline">
+                        Hotline: 19009080
+                    </div>
+                    <div class="text-[#898989] italic font-medium inline-flex items-baseline gap-2">
+                        <img src="./public/images/header/icon_letter.png" alt="Email">
+                        Email: cskh@vdtc.com.vn
+                    </div>
+                </div>
             </div>
+
         </div>
     </div>
     <!--body-->
@@ -1610,7 +1657,31 @@
     </div>
     <!--footer-->
 
-</div>
+    <!--masscot-->
+    <div class="flex flex-col items-center gap-3 fixed bottom-0 right-0 translate-y-[22%] translate-x-[20%] sm:translate-y-0 sm:translate-x-0 scale-50 sm:scale-75">
+        <div>
+            <a href="">
+                <img src="./public/images/body/masscot.png" alt="">
+            </a>
+        </div>
+        <div>
+            <a href="">
+                <img src="./public/images/body/icon_zalo_2.png" alt="">
+            </a>
+        </div>
+        <div>
+            <a href="">
+                <img src="./public/images/body/icon_messenger.png" alt="">
+            </a>
+        </div>
+        <div>
+            <a href="">
+                <img src="./public/images/body/icon_phone_ring.png" alt="">
+            </a>
+        </div>
+    </div>
+    <!--masscot-->
 
+</div>
 </body>
 </html>

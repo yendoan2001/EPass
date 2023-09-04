@@ -9,9 +9,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
           rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
     <link rel='icon' type='image/png'
           href='https://play-lh.googleusercontent.com/L4_dvDgoUbpKvwdZduoOQm5FsUImU6FdUHJ-wc8HtggIZpCrOyq6hdx64bvSbWDAac8o'>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="js/slider.js" defer></script>
     <title>ePass</title>
     <script>
         tailwind.config = {
@@ -25,7 +26,6 @@
 </head>
 <body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
-<script src="js/slider.js"></script>
 
 <div class="mx-auto home_page">
     <!--header-->
@@ -290,422 +290,133 @@
                     </button>
                 </div>
                 <!--slide-->
-                <div id="default-carouselousel2" class="relative w-full z-0" data-carousel="slide">
-                    <!-- Carousel wrapper -->
-                    <div class="relative overflow-hidden rounded-lg h-[700px] mt-4">
-                        <!-- Item 1 -->
-                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <div class="absolute grid grid-cols-3 gap-4 w-full">
-                                <div class="max-w-sm bg-white border border-gray-200 rounded-3xl shadow dark:bg-gray-800 dark:border-gray-700 mx-auto">
-                                    <a href="#">
-                                        <img class="rounded-t-lg" src="./public/images/body/outstanding_pic1.png"
-                                             alt=""/>
-                                    </a>
-                                    <div class="p-5">
-                                        <div class="flex justify-between">
-                                            <div class="flex flex-col gap-4 w-[60%]">
-                                                <div class="font-medium text-xl">Thẻ ePass thu phí không dừng</div>
-                                                <div class="text-xs text-[#A4A4A4]">Tạm biệt những hàng dài chờ đợi khi
-                                                    qua trạm thu phí...
-                                                </div>
-                                                <div class="text-red-600">Xem chi tiết</div>
-                                            </div>
-                                            <div class="flex flex-col justify-between w-[40%]">
-                                                <div class="mx-auto font-medium text-xl">120.000</div>
-                                                <div class="mx-auto bg-[#EE0033] rounded text-xs rounded-xl text-white px-6 py-4">
-                                                    Đăng ký
-                                                </div>
-                                            </div>
-                                        </div>
+                <div class="relative p-10 wrapper">
+                    <svg id="left" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                         stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5"/>
+                    </svg>
+                    <ul class="w-full py-20 carousel">
+                        <li class="relative max-w-sm w-full mx-auto rounded rounded-3xl card">
+                            <div class="img"><img class="scale-110" src="./public/images/body/outstanding_pic1.png"
+                                                  alt="" draggable="false"></div>
+                            <div class="absolute rounded-tl-3xl rounded-br-3xl translate-y-32 bottom-0 bg-[#fff] flex w-full justify-between p-4">
+                                <div class="w-[60%] flex flex-col gap-4">
+                                    <div class="text-xl font-medium ">Thẻ ePass thu phí không dừng</div>
+                                    <div class="text-[#A4A4A4] text-sm">Tạm biệt những hàng dài chờ đợi khi qua trạm thu
+                                        phí...
                                     </div>
+                                    <div class="text-[#EE0033]">Xem chi tiết</div>
                                 </div>
-                                <div class="max-w-sm bg-white border border-gray-200 rounded-3xl shadow dark:bg-gray-800 dark:border-gray-700 mx-auto">
-                                    <a href="#">
-                                        <img class="rounded-t-lg" src="./public/images/body/outstanding_pic1.png"
-                                             alt=""/>
-                                    </a>
-                                    <div class="p-5">
-                                        <div class="flex justify-between">
-                                            <div class="flex flex-col gap-4 w-[60%]">
-                                                <div class="font-medium text-xl">Thẻ ePass thu phí không dừng</div>
-                                                <div class="text-xs text-[#A4A4A4]">Tạm biệt những hàng dài chờ đợi khi
-                                                    qua trạm thu phí...
-                                                </div>
-                                                <div class="text-red-600">Xem chi tiết</div>
-                                            </div>
-                                            <div class="flex flex-col justify-between w-[40%]">
-                                                <div class="mx-auto font-medium text-xl">120.000</div>
-                                                <div class="mx-auto bg-[#EE0033] rounded text-xs rounded-xl text-white px-6 py-4">
-                                                    Đăng ký
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="max-w-sm bg-white border border-gray-200 rounded-3xl shadow dark:bg-gray-800 dark:border-gray-700 mx-auto">
-                                    <a href="#">
-                                        <img class="rounded-t-lg" src="./public/images/body/outstanding_pic1.png"
-                                             alt=""/>
-                                    </a>
-                                    <div class="p-5">
-                                        <div class="flex justify-between">
-                                            <div class="flex flex-col gap-4 w-[60%]">
-                                                <div class="font-medium text-xl">Thẻ ePass thu phí không dừng</div>
-                                                <div class="text-xs text-[#A4A4A4]">Tạm biệt những hàng dài chờ đợi khi
-                                                    qua trạm thu phí...
-                                                </div>
-                                                <div class="text-red-600">Xem chi tiết</div>
-                                            </div>
-                                            <div class="flex flex-col justify-between w-[40%]">
-                                                <div class="mx-auto font-medium text-xl">120.000</div>
-                                                <div class="mx-auto bg-[#EE0033] rounded text-xs rounded-xl text-white px-6 py-4">
-                                                    Đăng ký
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <div class="w-[40%] flex flex-col items-center gap-20">
+                                    <div class="text-xl font-medium">120.000</div>
+                                    <button class="bg-[#EE0033] text-white text-sm px-6 py-3 rounded rounded-lg">Đăng
+                                        ký
+                                    </button>
                                 </div>
                             </div>
-                        </div>
-                        <!-- Item 2 -->
-                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <div class="absolute grid grid-cols-3 gap-4 w-full">
-                                <div class="max-w-sm bg-white border border-gray-200 rounded-3xl shadow dark:bg-gray-800 dark:border-gray-700 mx-auto">
-                                    <a href="#">
-                                        <img class="rounded-t-lg" src="./public/images/body/outstanding_pic1.png"
-                                             alt=""/>
-                                    </a>
-                                    <div class="p-5">
-                                        <div class="flex justify-between">
-                                            <div class="flex flex-col gap-4 w-[60%]">
-                                                <div class="font-medium text-xl">Thẻ ePass thu phí không dừng</div>
-                                                <div class="text-xs text-[#A4A4A4]">Tạm biệt những hàng dài chờ đợi khi
-                                                    qua trạm thu phí...
-                                                </div>
-                                                <div class="text-red-600">Xem chi tiết</div>
-                                            </div>
-                                            <div class="flex flex-col justify-between w-[40%]">
-                                                <div class="mx-auto font-medium text-xl">120.000</div>
-                                                <div class="mx-auto bg-[#EE0033] rounded text-xs rounded-xl text-white px-6 py-4">
-                                                    Đăng ký
-                                                </div>
-                                            </div>
-                                        </div>
+                        </li>
+                        <li class="relative max-w-sm w-full mx-auto rounded rounded-3xl card">
+                            <div class=" img"><img class="" src="./public/images/body/outstanding_pic2.png" alt=""
+                                                   draggable="false"></div>
+                            <div class="absolute rounded-tl-3xl rounded-br-3xl translate-y-32 bottom-0 bg-[#fff] flex w-full justify-between p-4">
+                                <div class="w-[60%] flex flex-col gap-4">
+                                    <div class="text-xl font-medium ">Thẻ ePass thu phí không dừng</div>
+                                    <div class="text-[#A4A4A4] text-sm">Tạm biệt những hàng dài chờ đợi khi qua trạm thu
+                                        phí...
                                     </div>
+                                    <div class="text-[#EE0033]">Xem chi tiết</div>
                                 </div>
-                                <div class="max-w-sm bg-white border border-gray-200 rounded-3xl shadow dark:bg-gray-800 dark:border-gray-700 mx-auto">
-                                    <a href="#">
-                                        <img class="rounded-t-lg" src="./public/images/body/outstanding_pic1.png"
-                                             alt=""/>
-                                    </a>
-                                    <div class="p-5">
-                                        <div class="flex justify-between">
-                                            <div class="flex flex-col gap-4 w-[60%]">
-                                                <div class="font-medium text-xl">Thẻ ePass thu phí không dừng</div>
-                                                <div class="text-xs text-[#A4A4A4]">Tạm biệt những hàng dài chờ đợi khi
-                                                    qua trạm thu phí...
-                                                </div>
-                                                <div class="text-red-600">Xem chi tiết</div>
-                                            </div>
-                                            <div class="flex flex-col justify-between w-[40%]">
-                                                <div class="mx-auto font-medium text-xl">120.000</div>
-                                                <div class="mx-auto bg-[#EE0033] rounded text-xs rounded-xl text-white px-6 py-4">
-                                                    Đăng ký
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="max-w-sm bg-white border border-gray-200 rounded-3xl shadow dark:bg-gray-800 dark:border-gray-700 mx-auto">
-                                    <a href="#">
-                                        <img class="rounded-t-lg" src="./public/images/body/outstanding_pic1.png"
-                                             alt=""/>
-                                    </a>
-                                    <div class="p-5">
-                                        <div class="flex justify-between">
-                                            <div class="flex flex-col gap-4 w-[60%]">
-                                                <div class="font-medium text-xl">Thẻ ePass thu phí không dừng</div>
-                                                <div class="text-xs text-[#A4A4A4]">Tạm biệt những hàng dài chờ đợi khi
-                                                    qua trạm thu phí...
-                                                </div>
-                                                <div class="text-red-600">Xem chi tiết</div>
-                                            </div>
-                                            <div class="flex flex-col justify-between w-[40%]">
-                                                <div class="mx-auto font-medium text-xl">120.000</div>
-                                                <div class="mx-auto bg-[#EE0033] rounded text-xs rounded-xl text-white px-6 py-4">
-                                                    Đăng ký
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <div class="w-[40%] flex flex-col items-center gap-20">
+                                    <div class="text-xl font-medium">120.000</div>
+                                    <button class="bg-[#EE0033] text-white text-sm px-6 py-3 rounded rounded-lg">Đăng
+                                        ký
+                                    </button>
                                 </div>
                             </div>
-                        </div>
-                        <!-- Item 3 -->
-                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <div class="absolute grid grid-cols-3 gap-4 w-full">
-                                <div class="max-w-sm bg-white border border-gray-200 rounded-3xl shadow dark:bg-gray-800 dark:border-gray-700 mx-auto">
-                                    <a href="#">
-                                        <img class="rounded-t-lg" src="./public/images/body/outstanding_pic1.png"
-                                             alt=""/>
-                                    </a>
-                                    <div class="p-5">
-                                        <div class="flex justify-between">
-                                            <div class="flex flex-col gap-4 w-[60%]">
-                                                <div class="font-medium text-xl">Thẻ ePass thu phí không dừng</div>
-                                                <div class="text-xs text-[#A4A4A4]">Tạm biệt những hàng dài chờ đợi khi
-                                                    qua trạm thu phí...
-                                                </div>
-                                                <div class="text-red-600">Xem chi tiết</div>
-                                            </div>
-                                            <div class="flex flex-col justify-between w-[40%]">
-                                                <div class="mx-auto font-medium text-xl">120.000</div>
-                                                <div class="mx-auto bg-[#EE0033] rounded text-xs rounded-xl text-white px-6 py-4">
-                                                    Đăng ký
-                                                </div>
-                                            </div>
-                                        </div>
+                        </li>
+                        <li class="relative max-w-sm w-full mx-auto rounded rounded-3xl card">
+                            <div class=" img"><img class="" src="./public/images/body/outstanding_pic3.png" alt=""
+                                                   draggable="false"></div>
+                            <div class="absolute rounded-tl-3xl rounded-br-3xl translate-y-32 bottom-0 bg-[#fff] flex w-full justify-between p-4">
+                                <div class="w-[60%] flex flex-col gap-4">
+                                    <div class="text-xl font-medium ">Thẻ ePass thu phí không dừng</div>
+                                    <div class="text-[#A4A4A4] text-sm">Tạm biệt những hàng dài chờ đợi khi qua trạm thu
+                                        phí...
                                     </div>
+                                    <div class="text-[#EE0033]">Xem chi tiết</div>
                                 </div>
-                                <div class="max-w-sm bg-white border border-gray-200 rounded-3xl shadow dark:bg-gray-800 dark:border-gray-700 mx-auto">
-                                    <a href="#">
-                                        <img class="rounded-t-lg" src="./public/images/body/outstanding_pic1.png"
-                                             alt=""/>
-                                    </a>
-                                    <div class="p-5">
-                                        <div class="flex justify-between">
-                                            <div class="flex flex-col gap-4 w-[60%]">
-                                                <div class="font-medium text-xl">Thẻ ePass thu phí không dừng</div>
-                                                <div class="text-xs text-[#A4A4A4]">Tạm biệt những hàng dài chờ đợi khi
-                                                    qua trạm thu phí...
-                                                </div>
-                                                <div class="text-red-600">Xem chi tiết</div>
-                                            </div>
-                                            <div class="flex flex-col justify-between w-[40%]">
-                                                <div class="mx-auto font-medium text-xl">120.000</div>
-                                                <div class="mx-auto bg-[#EE0033] rounded text-xs rounded-xl text-white px-6 py-4">
-                                                    Đăng ký
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="max-w-sm bg-white border border-gray-200 rounded-3xl shadow dark:bg-gray-800 dark:border-gray-700 mx-auto">
-                                    <a href="#">
-                                        <img class="rounded-t-lg" src="./public/images/body/outstanding_pic1.png"
-                                             alt=""/>
-                                    </a>
-                                    <div class="p-5">
-                                        <div class="flex justify-between">
-                                            <div class="flex flex-col gap-4 w-[60%]">
-                                                <div class="font-medium text-xl">Thẻ ePass thu phí không dừng</div>
-                                                <div class="text-xs text-[#A4A4A4]">Tạm biệt những hàng dài chờ đợi khi
-                                                    qua trạm thu phí...
-                                                </div>
-                                                <div class="text-red-600">Xem chi tiết</div>
-                                            </div>
-                                            <div class="flex flex-col justify-between w-[40%]">
-                                                <div class="mx-auto font-medium text-xl">120.000</div>
-                                                <div class="mx-auto bg-[#EE0033] rounded text-xs rounded-xl text-white px-6 py-4">
-                                                    Đăng ký
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <div class="w-[40%] flex flex-col items-center gap-20">
+                                    <div class="text-xl font-medium">120.000</div>
+                                    <button class="bg-[#EE0033] text-white text-sm px-6 py-3 rounded rounded-lg">Đăng
+                                        ký
+                                    </button>
                                 </div>
                             </div>
-                        </div>
-                        <!-- Item 4 -->
-                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <div class="absolute grid grid-cols-3 gap-4 w-full">
-                                <div class="max-w-sm bg-white border border-gray-200 rounded-3xl shadow dark:bg-gray-800 dark:border-gray-700 mx-auto">
-                                    <a href="#">
-                                        <img class="rounded-t-lg" src="./public/images/body/outstanding_pic1.png"
-                                             alt=""/>
-                                    </a>
-                                    <div class="p-5">
-                                        <div class="flex justify-between">
-                                            <div class="flex flex-col gap-4 w-[60%]">
-                                                <div class="font-medium text-xl">Thẻ ePass thu phí không dừng</div>
-                                                <div class="text-xs text-[#A4A4A4]">Tạm biệt những hàng dài chờ đợi khi
-                                                    qua trạm thu phí...
-                                                </div>
-                                                <div class="text-red-600">Xem chi tiết</div>
-                                            </div>
-                                            <div class="flex flex-col justify-between w-[40%]">
-                                                <div class="mx-auto font-medium text-xl">120.000</div>
-                                                <div class="mx-auto bg-[#EE0033] rounded text-xs rounded-xl text-white px-6 py-4">
-                                                    Đăng ký
-                                                </div>
-                                            </div>
-                                        </div>
+                        </li>
+                        <li class="relative max-w-sm w-full mx-auto rounded rounded-3xl card">
+                            <div class=" img"><img class="scale-110" src="./public/images/body/outstanding_pic1.png"
+                                                   alt="" draggable="false"></div>
+                            <div class="absolute rounded-tl-3xl rounded-br-3xl translate-y-32 bottom-0 bg-[#fff] flex w-full justify-between p-4">
+                                <div class="w-[60%] flex flex-col gap-4">
+                                    <div class="text-xl font-medium ">Thẻ ePass thu phí không dừng</div>
+                                    <div class="text-[#A4A4A4] text-sm">Tạm biệt những hàng dài chờ đợi khi qua trạm thu
+                                        phí...
                                     </div>
+                                    <div class="text-[#EE0033]">Xem chi tiết</div>
                                 </div>
-                                <div class="max-w-sm bg-white border border-gray-200 rounded-3xl shadow dark:bg-gray-800 dark:border-gray-700 mx-auto">
-                                    <a href="#">
-                                        <img class="rounded-t-lg" src="./public/images/body/outstanding_pic1.png"
-                                             alt=""/>
-                                    </a>
-                                    <div class="p-5">
-                                        <div class="flex justify-between">
-                                            <div class="flex flex-col gap-4 w-[60%]">
-                                                <div class="font-medium text-xl">Thẻ ePass thu phí không dừng</div>
-                                                <div class="text-xs text-[#A4A4A4]">Tạm biệt những hàng dài chờ đợi khi
-                                                    qua trạm thu phí...
-                                                </div>
-                                                <div class="text-red-600">Xem chi tiết</div>
-                                            </div>
-                                            <div class="flex flex-col justify-between w-[40%]">
-                                                <div class="mx-auto font-medium text-xl">120.000</div>
-                                                <div class="mx-auto bg-[#EE0033] rounded text-xs rounded-xl text-white px-6 py-4">
-                                                    Đăng ký
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="max-w-sm bg-white border border-gray-200 rounded-3xl shadow dark:bg-gray-800 dark:border-gray-700 mx-auto">
-                                    <a href="#">
-                                        <img class="rounded-t-lg" src="./public/images/body/outstanding_pic1.png"
-                                             alt=""/>
-                                    </a>
-                                    <div class="p-5">
-                                        <div class="flex justify-between">
-                                            <div class="flex flex-col gap-4 w-[60%]">
-                                                <div class="font-medium text-xl">Thẻ ePass thu phí không dừng</div>
-                                                <div class="text-xs text-[#A4A4A4]">Tạm biệt những hàng dài chờ đợi khi
-                                                    qua trạm thu phí...
-                                                </div>
-                                                <div class="text-red-600">Xem chi tiết</div>
-                                            </div>
-                                            <div class="flex flex-col justify-between w-[40%]">
-                                                <div class="mx-auto font-medium text-xl">120.000</div>
-                                                <div class="mx-auto bg-[#EE0033] rounded text-xs rounded-xl text-white px-6 py-4">
-                                                    Đăng ký
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <div class="w-[40%] flex flex-col items-center gap-20">
+                                    <div class="text-xl font-medium">120.000</div>
+                                    <button class="bg-[#EE0033] text-white text-sm px-6 py-3 rounded rounded-lg">Đăng
+                                        ký
+                                    </button>
                                 </div>
                             </div>
-                        </div>
-                        <!-- Item 5 -->
-                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <div class="absolute grid grid-cols-3 gap-4 w-full">
-                                <div class="max-w-sm bg-white border border-gray-200 rounded-3xl shadow dark:bg-gray-800 dark:border-gray-700 mx-auto">
-                                    <a href="#">
-                                        <img class="rounded-t-lg" src="./public/images/body/outstanding_pic1.png"
-                                             alt=""/>
-                                    </a>
-                                    <div class="p-5">
-                                        <div class="flex justify-between">
-                                            <div class="flex flex-col gap-4 w-[60%]">
-                                                <div class="font-medium text-xl">Thẻ ePass thu phí không dừng</div>
-                                                <div class="text-xs text-[#A4A4A4]">Tạm biệt những hàng dài chờ đợi khi
-                                                    qua trạm thu phí...
-                                                </div>
-                                                <div class="text-red-600">Xem chi tiết</div>
-                                            </div>
-                                            <div class="flex flex-col justify-between w-[40%]">
-                                                <div class="mx-auto font-medium text-xl">120.000</div>
-                                                <div class="mx-auto bg-[#EE0033] rounded text-xs rounded-xl text-white px-6 py-4">
-                                                    Đăng ký
-                                                </div>
-                                            </div>
-                                        </div>
+                        </li>
+                        <li class="relative max-w-sm w-full mx-auto rounded rounded-3xl card">
+                            <div class=" img"><img class="" src="./public/images/body/outstanding_pic2.png" alt=""
+                                                   draggable="false"></div>
+                            <div class="absolute rounded-tl-3xl rounded-br-3xl translate-y-32 bottom-0 bg-[#fff] flex w-full justify-between p-4">
+                                <div class="w-[60%] flex flex-col gap-4">
+                                    <div class="text-xl font-medium ">Thẻ ePass thu phí không dừng</div>
+                                    <div class="text-[#A4A4A4] text-sm">Tạm biệt những hàng dài chờ đợi khi qua trạm thu
+                                        phí...
                                     </div>
+                                    <div class="text-[#EE0033]">Xem chi tiết</div>
                                 </div>
-                                <div class="max-w-sm bg-white border border-gray-200 rounded-3xl shadow dark:bg-gray-800 dark:border-gray-700 mx-auto">
-                                    <a href="#">
-                                        <img class="rounded-t-lg" src="./public/images/body/outstanding_pic1.png"
-                                             alt=""/>
-                                    </a>
-                                    <div class="p-5">
-                                        <div class="flex justify-between">
-                                            <div class="flex flex-col gap-4 w-[60%]">
-                                                <div class="font-medium text-xl">Thẻ ePass thu phí không dừng</div>
-                                                <div class="text-xs text-[#A4A4A4]">Tạm biệt những hàng dài chờ đợi khi
-                                                    qua trạm thu phí...
-                                                </div>
-                                                <div class="text-red-600">Xem chi tiết</div>
-                                            </div>
-                                            <div class="flex flex-col justify-between w-[40%]">
-                                                <div class="mx-auto font-medium text-xl">120.000</div>
-                                                <div class="mx-auto bg-[#EE0033] rounded text-xs rounded-xl text-white px-6 py-4">
-                                                    Đăng ký
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="max-w-sm bg-white border border-gray-200 rounded-3xl shadow dark:bg-gray-800 dark:border-gray-700 mx-auto">
-                                    <a href="#">
-                                        <img class="rounded-t-lg" src="./public/images/body/outstanding_pic1.png"
-                                             alt=""/>
-                                    </a>
-                                    <div class="p-5">
-                                        <div class="flex justify-between">
-                                            <div class="flex flex-col gap-4 w-[60%]">
-                                                <div class="font-medium text-xl">Thẻ ePass thu phí không dừng</div>
-                                                <div class="text-xs text-[#A4A4A4]">Tạm biệt những hàng dài chờ đợi khi
-                                                    qua trạm thu phí...
-                                                </div>
-                                                <div class="text-red-600">Xem chi tiết</div>
-                                            </div>
-                                            <div class="flex flex-col justify-between w-[40%]">
-                                                <div class="mx-auto font-medium text-xl">120.000</div>
-                                                <div class="mx-auto bg-[#EE0033] rounded text-xs rounded-xl text-white px-6 py-4">
-                                                    Đăng ký
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <div class="w-[40%] flex flex-col items-center gap-20">
+                                    <div class="text-xl font-medium">120.000</div>
+                                    <button class="bg-[#EE0033] text-white text-sm px-6 py-3 rounded rounded-lg">Đăng
+                                        ký
+                                    </button>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <!-- Slider indicators -->
-                    <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-8 left-1/2">
-                        <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
-                                data-carousel-slide-to="0"></button>
-                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
-                                data-carousel-slide-to="1"></button>
-                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
-                                data-carousel-slide-to="2"></button>
-                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4"
-                                data-carousel-slide-to="3"></button>
-                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5"
-                                data-carousel-slide-to="4"></button>
-                    </div>
-                    <!-- Slider controls -->
-                    <button type="button"
-                            class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-                            data-carousel-prev>
-                        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full border-2 border-gray-200 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
-                            <svg class="w-4 h-4 text-gray-200" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                 fill="none" viewBox="0 0 6 10">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                      stroke-width="2"
-                                      d="M5 1 1 5l4 4"/>
-                            </svg>
-                            <span class="sr-only">Previous</span>
-                        </span>
-                    </button>
-                    <button type="button"
-                            class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-                            data-carousel-next>
-                        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full border-2 border-gray-200 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
-                            <svg class="w-4 h-4 text-gray-200" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                 fill="none" viewBox="0 0 6 10">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                      stroke-width="2"
-                                      d="m1 9 4-4-4-4"/>
-                            </svg>
-                            <span class="sr-only">Next</span>
-                        </span>
-                    </button>
-                </div>
+                        </li>
+                        <li class="relative max-w-sm w-full mx-auto rounded rounded-3xl card">
+                            <div class=" img"><img class="" src="./public/images/body/outstanding_pic3.png" alt=""
+                                                   draggable="false"></div>
+                            <div class="absolute rounded-tl-3xl rounded-br-3xl translate-y-32 bottom-0 bg-[#fff] flex w-full justify-between p-4">
+                                <div class="w-[60%] flex flex-col gap-4">
+                                    <div class="text-xl font-medium ">Thẻ ePass thu phí không dừng</div>
+                                    <div class="text-[#A4A4A4] text-sm">Tạm biệt những hàng dài chờ đợi khi qua trạm thu
+                                        phí...
+                                    </div>
+                                    <div class="text-[#EE0033]">Xem chi tiết</div>
+                                </div>
+                                <div class="w-[40%] flex flex-col items-center gap-20">
+                                    <div class="text-xl font-medium">120.000</div>
+                                    <button class="bg-[#EE0033] text-white text-sm px-6 py-3 rounded rounded-lg">Đăng
+                                        ký
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <svg id="right" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                         stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/>
+                    </svg>
 
+                </div>
             </div>
         </div>
         <!--outstanding-->
@@ -714,103 +425,43 @@
         <div class="w-full endow">
             <div class="font-Montserrat w-[85%] mx-auto items-center">
                 <div class="text-center py-[40px] font-bold text-3xl">Ưu đãi</div>
-                <div id="default-carousel3" class="relative w-full z-0" data-carousel="slide">
-                    <!-- Carousel wrapper -->
-                    <div class="relative h-[200px] overflow-hidden rounded-lg sm:h-[350px]">
-                        <!-- Item 1 -->
-                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <div class="absolute block -translate-x-1/2 -translate-y-1/2 top-1/2 gap-4 left-1/2 grid w-full grid-cols-3">
-                                <img class="mx-auto" src="./public/images/body/endow_pic1.png"
-                                     alt="...">
-                                <img class="mx-auto" src="./public/images/body/endow_pic2.png"
-                                     alt="...">
-                                <img class="mx-auto" src="./public/images/body/endow_pic3.png"
-                                     alt="...">
-                            </div>
-                        </div>
-                        <!-- Item 2 -->
-                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <div class="absolute block -translate-x-1/2 -translate-y-1/2 top-1/2 gap-4 left-1/2 grid w-full grid-cols-3">
-                                <img class="mx-auto" src="./public/images/body/endow_pic1.png"
-                                     alt="...">
-                                <img class="mx-auto" src="./public/images/body/endow_pic2.png"
-                                     alt="...">
-                                <img class="mx-auto" src="./public/images/body/endow_pic3.png"
-                                     alt="...">
-                            </div>
-                        </div>
-                        <!-- Item 3 -->
-                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <div class="absolute block -translate-x-1/2 -translate-y-1/2 top-1/2 gap-4 left-1/2 grid w-full grid-cols-3">
-                                <img class="mx-auto" src="./public/images/body/endow_pic1.png"
-                                     alt="...">
-                                <img class="mx-auto" src="./public/images/body/endow_pic2.png"
-                                     alt="...">
-                                <img class="mx-auto" src="./public/images/body/endow_pic3.png"
-                                     alt="...">
-                            </div>
-                        </div>
-                        <!-- Item 4 -->
-                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <div class="absolute block -translate-x-1/2 -translate-y-1/2 top-1/2 gap-4 left-1/2 grid w-full grid-cols-3">
-                                <img class="mx-auto" src="./public/images/body/endow_pic1.png"
-                                     alt="...">
-                                <img class="mx-auto" src="./public/images/body/endow_pic2.png"
-                                     alt="...">
-                                <img class="mx-auto" src="./public/images/body/endow_pic3.png"
-                                     alt="...">
-                            </div>
-                        </div>
-                        <!-- Item 5 -->
-                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <div class="absolute block -translate-x-1/2 -translate-y-1/2 top-1/2 gap-4 left-1/2 grid w-full grid-cols-3">
-                                <img class="mx-auto" src="./public/images/body/endow_pic1.png"
-                                     alt="...">
-                                <img class="mx-auto" src="./public/images/body/endow_pic2.png"
-                                     alt="...">
-                                <img class="mx-auto" src="./public/images/body/endow_pic3.png"
-                                     alt="...">
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Slider indicators -->
-                    <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-14 left-1/2">
-                        <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
-                                data-carousel-slide-to="0"></button>
-                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
-                                data-carousel-slide-to="1"></button>
-                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
-                                data-carousel-slide-to="2"></button>
-                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4"
-                                data-carousel-slide-to="3"></button>
-                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5"
-                                data-carousel-slide-to="4"></button>
-                    </div>
-                    <!-- Slider controls -->
-                    <button type="button"
-                            class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-                            data-carousel-prev>
-        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full border-2 border-gray-200 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
-            <svg class="w-4 h-4 text-gray-200" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                 fill="none" viewBox="0 0 6 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="M5 1 1 5l4 4"/>
-            </svg>
-            <span class="sr-only">Previous</span>
-        </span>
-                    </button>
-                    <button type="button"
-                            class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-                            data-carousel-next>
-        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full border-2 border-gray-200 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
-            <svg class="w-4 h-4 text-gray-200" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                 fill="none" viewBox="0 0 6 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="m1 9 4-4-4-4"/>
-            </svg>
-            <span class="sr-only">Next</span>
-        </span>
-                    </button>
+                <!--slider-->
+                <div class="relative p-10 wrapper_endow">
+                    <svg id="left" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                         stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5"/>
+                    </svg>
+                    <ul class="w-full carousel_endow">
+                        <li class="max-w-sm mx-auto rounded rounded-3xl card_endow">
+                            <div class="img"><img class="" src="./public/images/body/endow_pic1.png" alt=""
+                                                  draggable="false"></div>
+                        </li>
+                        <li class="max-w-sm mx-auto rounded rounded-3xl card_endow">
+                            <div class="img"><img class="" src="./public/images/body/endow_pic2.png" alt=""
+                                                  draggable="false"></div>
+                        </li>
+                        <li class="max-w-sm mx-auto rounded rounded-3xl card_endow">
+                            <div class="img"><img class="" src="./public/images/body/endow_pic3.png" alt=""
+                                                  draggable="false"></div>
+                        </li>
+                        <li class="max-w-sm mx-auto rounded rounded-3xl card_endow">
+                            <div class="img"><img class="" src="./public/images/body/endow_pic1.png" alt=""
+                                                  draggable="false"></div>
+                        </li>
+                        <li class="max-w-sm mx-auto rounded rounded-3xl card_endow">
+                            <div class="img"><img class="" src="./public/images/body/endow_pic2.png" alt=""
+                                                  draggable="false"></div>
+                        </li>
+                        <li class="max-w-sm mx-auto rounded rounded-3xl card_endow">
+                            <div class="img"><img class="" src="./public/images/body/endow_pic3.png" alt=""
+                                                  draggable="false"></div>
+                        </li>
+                    </ul>
+                    <svg id="right" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                         stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/>
+                    </svg>
+
                 </div>
 
                 <div class="flex pb-10 justify-center">
@@ -819,20 +470,6 @@
             </div>
         </div>
         <!--endow-->
-
-        <!--endow2-->
-        <div class="w-full bg-[#F3F3F3] endow">
-            <div class="font-Montserrat w-[85%] mx-auto items-center">
-                <div class="text-center py-[40px] font-bold text-3xl">Ưu đãi</div>
-                <section class="flex justify-center items-center" id="slider">
-                    
-                </section>
-                <div class="flex pb-10 justify-center">
-                    <button class="bg-red-600 py-2 px-5 text-sm text-white rounded rounded-xl">Xem tất cả</button>
-                </div>
-            </div>
-        </div>
-        <!--endow2-->
 
         <!--statistic-->
         <div class="w-full bg-[#F3F3F3] py-10 statistic">
@@ -1177,140 +814,24 @@
         <!--partner-->
         <div class="w-full bg-[#F3F3F3] partner">
             <div class="font-Montserrat mx-auto py-20 w-[85%]">
-                <div class="flex justify-between w-full mb-8 gap-4">
-                    <div class="font-bold md:text-3xl text-xl ml-8">Đối tác của ePass</div>
-                    <div class="uppercase font-bold md:text-xl text-sm flex justify-end sm:gap-4 gap-2 mr-8">
-                        <div class="text-[#F38551] underline underline-offset-8">Doanh nghiệp</div>
-                        <div>Chính phủ</div>
+                <div class="text-center py-[40px] font-bold text-3xl">Đối tác của ePass</div>
+                <div class="flex flex-col gap-12 mx-auto">
+                    <div class="grid xl:grid-cols-5 sm:grid-cols-3 grid-cols-2 mx-auto gap-20">
+                        <img src="./public/images/body/partner_viettelpost.png" alt="">
+                        <img src="./public/images/body/partner_viettelmoney.png" alt="">
+                        <img src="./public/images/body/partner_viettelstore.png" alt="">
+                        <img src="./public/images/body/partner_vietteltelecom.png" alt="">
+                        <img src="./public/images/body/partner_MB.png" alt="">
                     </div>
-                </div>
-                <div id="default-carousel5" class="relative w-full z-0" data-carousel="slide">
-                    <!-- Carousel wrapper -->
-                    <div class="relative overflow-hidden rounded-lg sm:h-[150px]">
-                        <!-- Item 1 -->
-                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <div class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 grid items-center w-full grid-cols-6 w-full">
-                                <img class="w-2/3 mx-auto" src="./public/images/body/partner_MB.png"
-                                     alt="...">
-                                <img class="w-2/3 mx-auto" src="./public/images/body/partner_OCB.png"
-                                     alt="...">
-                                <img class="w-2/3 mx-auto" src="./public/images/body/partner_BIDV.png"
-                                     alt="...">
-                                <img class="w-2/3 mx-auto" src="./public/images/body/partner_taxi.png"
-                                     alt="...">
-                                <img class="w-2/3 mx-auto" src="./public/images/body/partner_VIB.png"
-                                     alt="...">
-                                <img class="w-2/3 mx-auto" src="./public/images/body/partner_VP.png"
-                                     alt="...">
-                            </div>
-                        </div>
-                        <!-- Item 2 -->
-                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <div class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 grid items-center w-full grid-cols-6 w-full">
-                                <img class="w-2/3 mx-auto" src="./public/images/body/partner_MB.png"
-                                     alt="...">
-                                <img class="w-2/3 mx-auto" src="./public/images/body/partner_OCB.png"
-                                     alt="...">
-                                <img class="w-2/3 mx-auto" src="./public/images/body/partner_BIDV.png"
-                                     alt="...">
-                                <img class="w-2/3 mx-auto" src="./public/images/body/partner_taxi.png"
-                                     alt="...">
-                                <img class="w-2/3 mx-auto" src="./public/images/body/partner_VIB.png"
-                                     alt="...">
-                                <img class="w-2/3 mx-auto" src="./public/images/body/partner_VP.png"
-                                     alt="...">
-                            </div>
-                        </div>
-                        <!-- Item 3 -->
-                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <div class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 grid items-center w-full grid-cols-6 w-full">
-                                <img class="w-2/3 mx-auto" src="./public/images/body/partner_MB.png"
-                                     alt="...">
-                                <img class="w-2/3 mx-auto" src="./public/images/body/partner_OCB.png"
-                                     alt="...">
-                                <img class="w-2/3 mx-auto" src="./public/images/body/partner_BIDV.png"
-                                     alt="...">
-                                <img class="w-2/3 mx-auto" src="./public/images/body/partner_taxi.png"
-                                     alt="...">
-                                <img class="w-2/3 mx-auto" src="./public/images/body/partner_VIB.png"
-                                     alt="...">
-                                <img class="w-2/3 mx-auto" src="./public/images/body/partner_VP.png"
-                                     alt="...">
-                            </div>
-                        </div>
-                        <!-- Item 4 -->
-                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <div class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 grid items-center w-full grid-cols-6 w-full">
-                                <img class="w-2/3 mx-auto" src="./public/images/body/partner_MB.png"
-                                     alt="...">
-                                <img class="w-2/3 mx-auto" src="./public/images/body/partner_OCB.png"
-                                     alt="...">
-                                <img class="w-2/3 mx-auto" src="./public/images/body/partner_BIDV.png"
-                                     alt="...">
-                                <img class="w-2/3 mx-auto" src="./public/images/body/partner_taxi.png"
-                                     alt="...">
-                                <img class="w-2/3 mx-auto" src="./public/images/body/partner_VIB.png"
-                                     alt="...">
-                                <img class="w-2/3 mx-auto" src="./public/images/body/partner_VP.png"
-                                     alt="...">
-                            </div>
-                        </div>
-                        <!-- Item 5 -->
-                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <div class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 grid items-center w-full grid-cols-6 w-full">
-                                <img class="w-2/3 mx-auto" src="./public/images/body/partner_MB.png"
-                                     alt="...">
-                                <img class="w-2/3 mx-auto" src="./public/images/body/partner_OCB.png"
-                                     alt="...">
-                                <img class="w-2/3 mx-auto" src="./public/images/body/partner_BIDV.png"
-                                     alt="...">
-                                <img class="w-2/3 mx-auto" src="./public/images/body/partner_taxi.png"
-                                     alt="...">
-                                <img class="w-2/3 mx-auto" src="./public/images/body/partner_VIB.png"
-                                     alt="...">
-                                <img class="w-2/3 mx-auto" src="./public/images/body/partner_VP.png"
-                                     alt="...">
-                            </div>
-                        </div>
+                    <div class="grid xl:grid-cols-7 sm:grid-cols-3 grid-cols-2 mx-auto gap-20">
+                        <img src="./public/images/body/partner_vietcombank.png" alt="">
+                        <img src="./public/images/body/partner_techcombank.png" alt="">
+                        <img src="./public/images/body/partner_agribank.png" alt="">
+                        <img src="./public/images/body/partner_BIDV.png" alt="">
+                        <img src="./public/images/body/partner_VP.png" alt="">
+                        <img src="./public/images/body/partner_taxi.png" alt="">
+                        <img src="./public/images/body/partner_viettelpost.png" alt="">
                     </div>
-                    <!-- Slider indicators -->
-                    <div class="absolute z-30 flex space-x-3 -translate-x-1/2 left-1/2">
-                        <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
-                                data-carousel-slide-to="0"></button>
-                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
-                                data-carousel-slide-to="1"></button>
-                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
-                                data-carousel-slide-to="2"></button>
-                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4"
-                                data-carousel-slide-to="3"></button>
-                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5"
-                                data-carousel-slide-to="4"></button>
-                    </div>
-                    <!-- Slider controls -->
-                    <button type="button"
-                            class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-                            data-carousel-prev>
-        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full border-2 border-gray-200 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
-            <svg class="w-4 h-4 text-gray-200" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                 fill="none" viewBox="0 0 6 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="M5 1 1 5l4 4"/>
-            </svg>
-            <span class="sr-only">Previous</span>
-        </span>
-                    </button>
-                    <button type="button"
-                            class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-                            data-carousel-next>
-        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full border-2 border-gray-200 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
-            <svg class="w-4 h-4 text-gray-200" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                 fill="none" viewBox="0 0 6 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="m1 9 4-4-4-4"/>
-            </svg>
-            <span class="sr-only">Next</span>
-        </span>
-                    </button>
                 </div>
             </div>
         </div>
